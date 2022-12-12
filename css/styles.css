@@ -83,8 +83,7 @@ color:#757575;
     margin-left:50px;
   }
 
-  .item,
-  .accent {
+  .item{
     display:block;
     padding-top:8px;
     padding-bottom:8px;
@@ -93,13 +92,13 @@ color:#757575;
     color:var(--headline-color);
   }
   
-  .accent:hover,
-  .accent:focus {
+  .item:hover,
+  .item:focus {
   color: var(--accent-color);
   
   }
   
-  <!--auth-nav
+/* Auth-nav links */
  
   .auth-nav {
     font-weight: 500;
@@ -109,9 +108,11 @@ color:#757575;
   }
 
   .auth-nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     margin-left:auto;
   }
-
  
   .email,
   .tel-header {
@@ -131,28 +132,24 @@ color:#757575;
   color:#757575;
   text-decoration:none;
   }
-  
-  .email:hover,
-  .email:focus {
+
+  .auth-item:hover,
+  .auth-item:focus {
   color: var(--accent-color);
   }
 
- .icon-envelope, .icon-smartphone{
+.envelope,
+.tel-icon{
   margin-right:10px;
+}
 
- }
-
- .icon-envelope{
-  fill:#757575;
- }
-
- .icon-envelope:hover{
-  fill:var(--accent-color);
- }
- .envelope {
-  display:inline-block;
-  width: 10px;
-  height:12px;
+.email:hover,
+.email:focus{
+ fill:var(--accent-color);
+}
+.tel-header:hover,
+.tel-header:focus{
+ fill:var(--accent-color);
 }
 
   /*Main content */
@@ -225,8 +222,8 @@ color: var(--primary-white);
 
   .btn:hover,
   .btn:focus {
-   box-shadow: 0px 4px 4px 0px #00000026;
-   
+    background-color:#188CE8;
+    box-shadow: 0px 4px 4px 0px #00000040;
   }
 
   /*Features*/
@@ -269,7 +266,7 @@ line-height: 1.71;
 
 .icon-container{
   background-color:#F5F4FA;
-  width:270px;
+
   height: 120px;
 
   margin-bottom:30px;
@@ -341,9 +338,11 @@ color: var(--headline-color);
 .team-member-list {
   display:inline-block;
   margin-top:0px;
-  
   justify-content:space-between;
+
   box-shadow: 0px 4px 4px 0px #00000040;
+  border-bottom-right-radius:4px;
+  border-bottom-left-radius:4px;
   background-color:var(--primary-white);
 }
 
@@ -411,7 +410,8 @@ text-align: center;
   height: 44px;
 }
 
-.instagram:hover{
+.social-link:hover,
+.social-link:focus{
   width: 44px;
   height: 44px;
   fill:var(--primary-white);
@@ -419,9 +419,6 @@ text-align: center;
   border-radius: 50%;
 }
 
-.instagram:hover{
-  fill:var(--primary-white);
- }
 
  /*Our clients section */
  .loyal-clients{
@@ -461,7 +458,8 @@ border-radius:4px;
   object-fit: cover;
 }
 
-.company-four:hover{
+.clients-link:hover,
+.clients-link:focus{
   fill:var(--accent-color);
 }
 
@@ -541,15 +539,15 @@ color:var(--primary-white);
 
 .headline-footer{
   display:inline-block;
-  Font size: 14px;
-  Line height: 1.14;
-  Line height: 100%;
-  text-align:center;
-  color:#FFFFFF;
-
   margin:0px;
-  margin-bottom:10px;
+  margin-bottom:20px;
   padding:0px;
+
+  font-size: 14px;
+  line-height: 1.14;
+   line-height: 100%;
+  text-transform:uppercase;
+  color:#FFFFFF;
 }
 
 
@@ -578,7 +576,8 @@ color:var(--primary-white);
   ;
 }
 
-.twitter:hover{
+.social-link-footer:hover,
+.social-link-footer:focus{
   width: 44px;
   height: 44px;
   fill:var(--primary-white);
