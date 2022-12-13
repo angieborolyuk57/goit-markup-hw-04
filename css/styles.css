@@ -140,15 +140,17 @@ color:#757575;
 
 .envelope,
 .tel-icon{
+  fill:#757575;
   margin-right:10px;
 }
 
-.email:hover,
-.email:focus{
+
+.envelope:hover,
+.envelope:focus{
  fill:var(--accent-color);
 }
-.tel-header:hover,
-.tel-header:focus{
+.tel-icon:hover,
+.tel-icon:focus{
  fill:var(--accent-color);
 }
 
@@ -421,11 +423,14 @@ text-align: center;
 
 
  /*Our clients section */
+
+ .our-clients{
+  padding-top:94px;
+  padding-bottom:94px;
+ }
  .loyal-clients{
   margin-top:0px;
   margin-bottom:50px;
-  padding-top:94px;
-
  }
 
 /*Our clients icons */
@@ -433,7 +438,6 @@ text-align: center;
   display:flex;
   align-items: center;
   gap:30px;
-  padding-bottom:94px;
 }
 
 .clients-item{
