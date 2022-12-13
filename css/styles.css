@@ -154,6 +154,10 @@ color:#757575;
  fill:var(--accent-color);
 }
 
+.tel-header:hover{
+  fill:var(--accent-color);
+}
+
   /*Main content */
 
   /*Hero section */
