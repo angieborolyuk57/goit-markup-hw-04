@@ -140,7 +140,7 @@ color:#757575;
 
 .envelope,
 .tel-icon{
-  fill:#757575;
+  fill:currentColor;
   margin-right:10px;
 }
 
