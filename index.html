@@ -35,7 +35,7 @@
                 <section class="hero-section overlay section">                
                        <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                        <div>
-                           <button class="btn" type="button">Замовити послугу</button> 
+                           <button class="btn" type="button" data-modal-open>Замовити послугу</button> 
                         </div> 
                       </section>
                 <!--features-->
@@ -345,5 +345,12 @@
       </div>
     </div> 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close>Close</button>
+        <h3 class="modal-headline">Залиште свої дані, ми вам передзвонимо</h3>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
