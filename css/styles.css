@@ -705,9 +705,8 @@ text-align: center;
    margin-right:8px;
    margin-top: 8px;
    background-color:var(--primary-white);
-  
-  border: 1px solid #0000001A;
 
+  border: 1px solid #0000001A;
   width: 30px;
   height: 30px;
   border-radius:50%;
